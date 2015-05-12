@@ -1,16 +1,8 @@
 
 @import "partials/variables";
+@import "partials/mixins";
+@import "partials/layouts";
+@import "partials/typo";
+@import "partials/form";
 @import "partials/fonts";
-
-
-body {
-  background: $color-white;
-  font-family: $font-text;
-  font-weight: normal;
-  font-style: normal;
-}
-
-h1, h2 {
-  font-family: $font-title;
-}
 
