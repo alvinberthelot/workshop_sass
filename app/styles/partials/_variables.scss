@@ -1,7 +1,18 @@
 
-$color-white: white;
+$path-img: "../img";
 
-$color-first: yellow;
+$color-ulysses: #CA0700;
+$color-soulful-white: #FFFBF5;
+$color-old-caramel: #956C1F;
+$color-brown-black: #2A2111;
+$color-beige-grey: #E7E0D2;
+
+$color-white: #FAFBF9;
+
+$color-background: $color-white;
+$color-background-annex: darken($color-soulful-white, 10);
+$color-first: $color-ulysses;
+$color-second: $color-brown-black;
 
 $font-arimo: 'arimo', Helvetica, Arial, sans-serif;
 $font-pacifico: 'pacifico', Helvetica, Arial, sans-serif;

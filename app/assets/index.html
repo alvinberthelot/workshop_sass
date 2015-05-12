@@ -5,32 +5,55 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <header>
-    <h1>
-      Blog de cuisine
-    </h1>
-  </header>
   <div id="container">
+    <header id="teaser">
+      <h1 id="blog-title">
+        Blog de cuisine
+      </h1>
+      <ul id="last-recipes" class="unstyled">
+        <li>
+          <a href="#strawberry-mojito">
+            <img src="./img/strawberry-mojito.png" alt="Verre contenant un mojito à la fraise"> 
+            Mojito à la fraise
+          </a>
+        </li>
+        <li>
+          <a href="#green-beans">
+            <img src="./img/green-beans.png" alt="Panier d'haricots verts">
+            Salade d'haricots verts
+          </a>
+        </li>
+        <li>
+          <a href="#cherry-waffles">
+            <img src="./img/cherry-waffles.png" alt="Gaufres avec compotée de cerises">
+            Gaufres à la cerise
+          </a>
+        </li>
+      </ul>
+    </header>
     <main>
       <section>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem animi veniam totam, modi. Magni voluptatem soluta quae, fugiat facilis. Odit, nemo, quisquam reiciendis in architecto praesentium, similique doloremque hic, laudantium fugit totam omnis. Aliquid vel sapiente vero a deserunt officiis, accusantium beatae magni esse ipsa atque veritatis ratione sunt placeat quisquam modi maxime quo distinctio animi cupiditate debitis! Dolore, tenetur sequi corporis odio rem eligendi accusantium accusamus aut vero! Velit dignissimos recusandae dolore, illum cupiditate. Nisi, saepe. Rem illo voluptates cupiditate accusantium quia dolore aspernatur dolorum, minus ipsa iure asperiores voluptate laboriosam reprehenderit recusandae earum facilis adipisci voluptatibus officiis rerum tenetur eos pariatur. Aliquid nesciunt adipisci deserunt incidunt aut saepe pariatur consectetur animi voluptatibus aperiam maxime et deleniti laborum assumenda, repellendus mollitia perspiciatis tenetur at ea est a! Impedit voluptas quaerat autem nam quis quod corporis harum eligendi ea, officia fugiat dignissimos veritatis eum, delectus voluptate! Facilis perspiciatis numquam est.</p>
-        <section class="recipe">
+        <section id="strawberry-mojito" class="recipe">
           <header>
-            <img src="./img/strawberry_mojito.png" alt="Verre contenant un mojito à la fraise">
-            <h2>Mojito à la fraise</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus dignissimos quisquam, id culpa mollitia dolores tempora quia unde dicta quibusdam, numquam expedita quasi asperiores.</p>
+            <h1>Mojito à la fraise</h1>
           </header>
           <div>
-            <h3>Ingrédients</h3>
-            <ul>
-              <li>5 cl de rhum cubain blanc</li>
-              <li>10 cl de jus de fraises</li>
-              <li>5 cl d'eau gazeuse</li>
-              <li>1 citron vert</li>
-              <li>4 cl de sirop de sucre de canne</li>
-              <li>10 feuilles de menthe</li>
-              <li>glaçons</li>
-            </ul>
+            <div class="teaser-recipe">
+              <img src="./img/strawberry-mojito.png" alt="Verre contenant un mojito à la fraise">  
+            </div>
+            <div>            
+              <h3>Ingrédients</h3>
+              <ul>
+                <li>5 cl de rhum cubain blanc</li>
+                <li>10 cl de jus de fraises</li>
+                <li>5 cl d'eau gazeuse</li>
+                <li>1 citron vert</li>
+                <li>4 cl de sirop de sucre de canne</li>
+                <li>10 feuilles de menthe</li>
+                <li>glaçons</li>
+              </ul>
+            </div>
           </div>
           <div>
             <h3>Recette</h3>
@@ -48,10 +71,10 @@ Préparation 10 min
 Coût de la recette  27,32
 Niveau de difficulté  Facile
 
-        <section class="recipe">
+        <section id="green-beans" class="recipe">
           <header>
-            <img src="./img/green_beans.png" alt="Panier d'haricots verts">
-            <h2>Salade d'haricots verts</h2>
+            <img src="./img/green-beans.png" alt="Panier d'haricots verts">
+            <h1>Salade d'haricots verts</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus dignissimos quisquam, id culpa mollitia dolores tempora quia unde dicta quibusdam, numquam expedita quasi asperiores.</p>
           </header>
           <div>
@@ -80,10 +103,10 @@ Niveau de difficulté  Facile
             </ol>
           </div>
         </section>
-        <section class="recipe">
+        <section id="cherry-waffles" class="recipe">
           <header>
-            <img src="./img/cherry_waffles.png" alt="Gauffres ">
-            <h2>Gaufres à la cerise</h2>
+            <img src="./img/cherry-waffles.png" alt="Gaufres avec compotée de cerises">
+            <h1>Gaufres à la cerise</h1>
           </header>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus dignissimos quisquam, id culpa mollitia dolores tempora quia unde dicta quibusdam, numquam expedita quasi asperiores.</p>
           <div>
@@ -116,7 +139,7 @@ Niveau de difficulté  Facile
         </section>
       </section>
     </main>
-    <aside>
+<!--     <aside>
       <ul class="unstyled contact">
         <li>
           <div class="rounded-icon"><i>a</i></div>Twitter
@@ -125,25 +148,25 @@ Niveau de difficulté  Facile
           <span class="rounded-icon"><i>b</i></span>Email
         </li>
       </ul>
-    </aside>
+    </aside> -->
+    <div style="clear: both;"></div>
+    <section>
+      Proposer une recette
+      <form>
+        <div>
+          <label for="title">Nom de la recette</label>
+          <input type="text" id="title" placeholder="Nom de la recette">
+        </div>
+        <div>
+          <label for="recipe">Recette</label>
+          <textarea rows="10" type="text" id="recipe" placeholder="Ingrédients, ..."></textarea>
+        </div>
+        <div>
+          <button type="submit">Soumettre</button>
+        </div>
+      </form>
+    </section>
   </div>
-  <div style="clear: both;"></div>
-  <section>
-    Proposer une recette
-    <form>
-      <div>
-        <label for="title">Nom de la recette</label>
-        <input type="text" id="title" placeholder="Nom de la recette">
-      </div>
-      <div>
-        <label for="recipe">Recette</label>
-        <textarea rows="10" type="text" id="recipe" placeholder="Ingrédients, ..."></textarea>
-      </div>
-      <div>
-        <button type="submit">Soumettre</button>
-      </div>
-    </form>
-  </section>
   <footer>
     Sass Workshop 
   </footer>

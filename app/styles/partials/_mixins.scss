@@ -10,8 +10,30 @@
   }
 }
 
+@mixin bg-img($name-img, $extension) {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  /* no scale */
+  @media (min-resolution: 96dpi) {
+    background-image: find-img($name-img, '', $extension);
+  }
+  /* scaled by 2 */
+  @media (min-resolution: 192dpi) {
+    background-image: find-img($name-img, '@2x', $extension);
+  }
+}
+
 @mixin circle($size) {
   border-radius: 50%;
   height: $size;
   width: $size;
+}
+
+@mixin hr($color) {
+  border-bottom: 4px double $color;
+}
+
+@mixin hr-top($color) {
+  border-top: 4px double $color;
 }
