@@ -16,6 +16,10 @@ var paths = {
       src: basePaths.src + 'assets/**/*.html',
       dest: basePaths.dest
   },
+  images: {
+      src: basePaths.src + 'assets/img/*',
+      dest: basePaths.dest + 'img/'
+  },
   styles: {
       src: basePaths.src + 'styles/**/*.scss',
       dest: basePaths.dest + 'css/'
@@ -54,6 +58,11 @@ gulp.task('html', function() {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('images', [], function () {
+  return gulp.src(paths.images.src)
+    .pipe(gulp.dest(paths.images.dest));
+});
+
 // ******************************************
 // COPY TASKS
 // ******************************************
@@ -83,7 +92,7 @@ gulp.task('serve', ['build'], function() {
 // MASTER TASKS
 // ******************************************
 
-gulp.task('build', ['copy-fonts', 'css', 'html']);
+gulp.task('build', ['copy-fonts', 'css', 'html', 'images']);
 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
