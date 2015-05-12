@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------------
+Custom Fonts
+---------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'pacifico';
+  src: url('fonts/pacifico/Pacifico.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'arimo';
+  src: url('fonts/arimo/Arimo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'arimo';
+  src: url('fonts/arimo/Arimo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'arimo';
+  src: url('fonts/arimo/Arimo-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'arimo';
+  src: url('fonts/arimo/Arimo-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+ 

@@ -1,8 +1,16 @@
 
 @import "partials/variables";
+@import "partials/fonts";
 
 
 body {
   background: $color-white;
+  font-family: $font-text;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2 {
+  font-family: $font-title;
 }
 
