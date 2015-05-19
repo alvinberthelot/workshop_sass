@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var del = require('del');
 var sass = require('gulp-sass');
+var taskListing = require('gulp-task-listing');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
@@ -25,6 +26,12 @@ var paths = {
       dest: basePaths.dest + 'css/'
   }
 };
+
+// ******************************************
+// HELP TASKS
+// ******************************************
+
+gulp.task('help', taskListing);
 
 // ******************************************
 // DELETE TASKS
