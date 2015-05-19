@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var del = require('del');
 var sass = require('gulp-sass');
+var sassdoc = require('sassdoc');
 var taskListing = require('gulp-task-listing');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
@@ -93,6 +94,22 @@ gulp.task('serve', ['build'], function() {
 
     gulp.watch(paths.html.src, ['html']);
     gulp.watch(paths.styles.src, ['css']);
+});
+
+// ******************************************
+// DOCUMENTATION TASKS
+// ******************************************
+
+// Sass documentation
+gulp.task('sassdoc', function () {
+
+  var options = {
+    dest: 'docs',
+    verbose: true
+  };
+
+  return gulp.src(paths.styles.src)
+    .pipe(sassdoc(options));
 });
 
 // ******************************************
