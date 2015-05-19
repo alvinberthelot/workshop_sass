@@ -21,12 +21,16 @@ $color-background-annex: darken($color-soulful-white, 10);
 $color-first: $color-ulysses;
 $color-second: $color-brown-black;
 
-$font-arimo: 'arimo', Helvetica, Arial, sans-serif;
-$font-pacifico: 'pacifico', Helvetica, Arial, sans-serif;
+$font-size-base: 16px !default;
 
-$font-text: $font-arimo;
-$font-title: $font-pacifico;
-$font-item: $font-pacifico;
+$font-family-arimo: 'arimo', Helvetica, Arial, sans-serif;
+$font-family-pacifico: 'pacifico', Helvetica, Arial, sans-serif;
 
-$screen-s: 600px;
-$screen-m: 1024px;
+$font-text: $font-family-arimo;
+$font-title: $font-family-pacifico;
+$font-item: $font-family-pacifico;
+
+$screen-s: pxtoem(600px, $font-size-base);
+$screen-m: pxtoem(1024px, $font-size-base);
+// $screen-s: 600px;
+// $screen-m: 1024px;

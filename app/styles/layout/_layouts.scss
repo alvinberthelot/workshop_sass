@@ -10,12 +10,13 @@ aside {
 }
 
 #container {
-  // background: blue;
+  background: blue;
   width: 100%;
 }
 
 @include mq(medium) {
   #container {
+    background: green;
     margin: auto;
     // margin: 40px auto 40px auto;
     // width: 960px;
@@ -32,6 +33,7 @@ aside {
 
 @include mq(large) {
   #container {
+    background: yellow;
     width: 1024px;
     // margin-right: 300px;
   }

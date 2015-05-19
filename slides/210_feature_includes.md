@@ -1,19 +1,26 @@
-## Inclusions
+## Inclusions de fichiers
+
+SCSS permet de découper le code source en plusieurs fichiers pour gagner en maintenabilité.
 
 SCSS
 
-
-
-// Déclaration d'une varibale avec $
-$purple: #9013FE;
-
-h1 {
-  // Utilisation 
-  color: $purple;
+body {
+  background: whitesmoke;
 }
+
+// Fichier possédant h1 {color: blue;}
+@import "partials/typo";
+
 
 CSS
 
-h1 {
-  color: #9013FE;
+body {
+  background: whitesmoke;
 }
+
+h1 {
+  color: blue;
+}
+
+
+/!\ Il faut bien distinguer @import CSS vs Sass

@@ -1,3 +1,7 @@
 @function find-img($name-img, $suffix, $file) {
   @return url("#{$path-img}/#{$name-img}#{$suffix}#{$file}");
 }
+
+@function pxtoem($pxval, $base) {
+  @return ($pxval / $base) * 1em;
+}

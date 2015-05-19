@@ -1,13 +1,29 @@
+// Bye bye encoding issues
+@charset 'utf-8';
 
-// Global requirements
-@import "partials/variables";
-@import "partials/functions";
-@import "partials/mixins";
 
-@import "partials/layouts";
-@import "partials/typo";
-@import "partials/form";
-@import "partials/fonts";
+// 1. vendors
+
+// 2. utils for global requirements
+@import 'utils/functions';
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// 3. base
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/typo';
+
+// 4. layout
+@import 'layout/forms';
+@import 'layout/layouts';
+
+// 5. components
+
+// 6. pages
+
+// 7. themes
+
 
 
 
