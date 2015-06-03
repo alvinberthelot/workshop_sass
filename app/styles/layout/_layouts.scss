@@ -30,19 +30,25 @@ section, p, div {
   }
   article {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
 
     .teaser {
       @extend %spacing-recipe;
       flex: 1 auto;
+      order: 1;
     }
     .ingredients {
       @extend %spacing-recipe;
-      flex: 1 auto;
+      background-color: white;
+      border: 1px solid darken($color-background, 10);
+      flex: 1 $aside-width;
+      order: 3;
+      margin-right: $spacing-width-page + $spacing-width-recipe;
     }
     .instructions {
       @extend %spacing-recipe;
-      flex: 2 auto;
+      flex-shrink: 50;
+      order: 2;
     }
   }
 }
