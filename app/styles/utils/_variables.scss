@@ -30,7 +30,21 @@ $font-text: $font-family-arimo;
 $font-title: $font-family-pacifico;
 $font-item: $font-family-pacifico;
 
-$screen-s: pxtoem(600px, $font-size-base);
-$screen-m: pxtoem(1024px, $font-size-base);
+$screen-s: pxtorem(600px, $font-size-base);
+$screen-m: pxtorem(1024px, $font-size-base);
+
+
+$margin-width-page: 0;
+$spacing-width-page: $margin-width-page;
+
+
+$margin-height-recipe: 0;
+$margin-width-recipe: 24px;
+$padding-recipe: 24px;
+$padding-height-recipe: $padding-recipe;
+$padding-width-recipe: $padding-recipe;
+$spacing-height-recipe: $margin-height-recipe + $padding-height-recipe;
+$spacing-width-recipe: $margin-width-recipe + $padding-width-recipe;
+
 // $screen-s: 600px;
 // $screen-m: 1024px;

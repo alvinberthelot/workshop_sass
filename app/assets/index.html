@@ -6,43 +6,49 @@
 </head>
 <body>
   <div id="container">
-    <header id="teaser">
-      <h1 id="blog-title">
+    <header>
+      <h1>
         Blog de cuisine
       </h1>
-      <ul id="last-recipes" class="unstyled">
-        <li>
-          <a href="#strawberry-mojito">
-            <img src="./img/strawberry-mojito.png" alt="Verre contenant un mojito à la fraise"> 
-            Mojito à la fraise
-          </a>
-        </li>
-        <li>
-          <a href="#green-beans">
-            <img src="./img/green-beans.png" alt="Panier d'haricots verts">
-            Salade d'haricots verts
-          </a>
-        </li>
-        <li>
-          <a href="#cherry-waffles">
-            <img src="./img/cherry-waffles.png" alt="Gaufres avec compotée de cerises">
-            Gaufres à la cerise
-          </a>
-        </li>
-      </ul>
+      
     </header>
+    <aside id="teaser">
+      <nav>
+        <ul id="last-recipes" class="unstyled">
+          <li>
+            <a href="#strawberry-mojito">
+              <img src="./img/strawberry-mojito.png" alt="Verre contenant un mojito à la fraise"> 
+              Mojito à la fraise
+            </a>
+          </li>
+          <li>
+            <a href="#green-beans">
+              <img src="./img/green-beans.png" alt="Panier d'haricots verts">
+              Salade d'haricots verts
+            </a>
+          </li>
+          <li>
+            <a href="#cherry-waffles">
+              <img src="./img/cherry-waffles.png" alt="Gaufres avec compotée de cerises">
+              Gaufres à la cerise
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
     <main>
       <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem animi veniam totam, modi. Magni voluptatem soluta quae, fugiat facilis. Odit, nemo, quisquam reiciendis in architecto praesentium, similique doloremque hic, laudantium fugit totam omnis. Aliquid vel sapiente vero a deserunt officiis, accusantium beatae magni esse ipsa atque veritatis ratione sunt placeat quisquam modi maxime quo distinctio animi cupiditate debitis! Dolore, tenetur sequi corporis odio rem eligendi accusantium accusamus aut vero! Velit dignissimos recusandae dolore, illum cupiditate. Nisi, saepe. Rem illo voluptates cupiditate accusantium quia dolore aspernatur dolorum, minus ipsa iure asperiores voluptate laboriosam reprehenderit recusandae earum facilis adipisci voluptatibus officiis rerum tenetur eos pariatur. Aliquid nesciunt adipisci deserunt incidunt aut saepe pariatur consectetur animi voluptatibus aperiam maxime et deleniti laborum assumenda, repellendus mollitia perspiciatis tenetur at ea est a! Impedit voluptas quaerat autem nam quis quod corporis harum eligendi ea, officia fugiat dignissimos veritatis eum, delectus voluptate! Facilis perspiciatis numquam est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem animi veniam totam, modi. Magni voluptatem soluta quae, fugiat facilis. Odit, nemo, quisquam reiciendis in architecto praesentium, similique doloremque hic, laudantium fugit totam omnis. Aliquid vel sapiente vero a deserunt officiis, accusantium beatae magni esse ipsa atque veritatis ratione sunt placeat quisquam modi maxime quo distinctio animi cupiditate debitis!</p>
+
         <section id="strawberry-mojito" class="recipe">
           <header>
-            <h1>Mojito à la fraise</h1>
+            <h2>Mojito à la fraise</h2>
           </header>
-          <div>
-            <div class="teaser-recipe">
+          <article>          
+            <div class="teaser">
               <img src="./img/strawberry-mojito.png" alt="Verre contenant un mojito à la fraise">  
             </div>
-            <div>            
+            <div class="ingredients">
               <h3>Ingrédients</h3>
               <ul>
                 <li>5 cl de rhum cubain blanc</li>
@@ -54,32 +60,29 @@
                 <li>glaçons</li>
               </ul>
             </div>
-          </div>
-          <div>
-            <h3>Recette</h3>
-            <ol>
-              <li><p>Pressez le citron vert puis coupez-le en quartiers. Déposez-les dans un verre.</p></li>
-              <li><p>Ajoutez la menthe fraîche et écrasez-le tout.</p></li>
-              <li><p>Ajoutez le sirop de canne, le rhum, l'eau gazeuse et les glaçons.</p></li>
-              <li><p>Mélangez légèrement puis ajoutez le jus de fraises.</p></li>
-            </ol>
-          </div>
+            <div class="instructions">
+              <h3>Recette</h3>
+              <ol>
+                <li>Pressez le citron vert puis coupez-le en quartiers. Déposez-les dans un verre.</li>
+                <li>Ajoutez la menthe fraîche et écrasez-le tout.</li>
+                <li>Ajoutez le sirop de canne, le rhum, l'eau gazeuse et les glaçons.</li>
+                <li>Mélangez légèrement puis ajoutez le jus de fraises.</li>
+              </ol>
+            </div>
+          </article>
         </section>
-
-Quantité  1 Personne(s)
-Préparation 10 min
-Coût de la recette  27,32
-Niveau de difficulté  Facile
 
         <section id="green-beans" class="recipe">
           <header>
-            <img src="./img/green-beans.png" alt="Panier d'haricots verts">
-            <h1>Salade d'haricots verts</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus dignissimos quisquam, id culpa mollitia dolores tempora quia unde dicta quibusdam, numquam expedita quasi asperiores.</p>
+            <h2>Salade d'haricots verts</h2>
           </header>
-          <div>
-            <h3>Ingrédients</h3>
-            <ul>
+          <article>
+            <div class="teaser">
+              <img src="./img/green-beans.png" alt="Panier d'haricots verts"> 
+            </div>
+            <div class="ingredients">
+              <h3>Ingrédients</h3>
+              <ul>
               <li>800 g de haricots verts</li>
               <li>1 pièce d'échalote</li>
               <li>30 g de tomates confites</li>
@@ -89,54 +92,60 @@ Niveau de difficulté  Facile
               <li>1 cuillère à café de moutarde à l'ancienne</li>
               <li>6 pincées de sel fin</li>
               <li>30 g de gros sel</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Recette</h3>
-            <ol>
-              <li><p>Épluchez l'échalote et ciselez la finement.</p></li>
-              <li><p>Ciselez la ciboulette très finement.</p></li>
-              <li><p>Coupez les tomates confites en petits dés.</p></li>
-              <li><p>Portez un grand volume d'eau à ébulition, assaisonez au gros et plongez les haricots dedans. Faites cuire pendant 8 min environ. Puis égouttez les haricots verts.</p></li>
-              <li><p>Préparez la vinaigrette en mélangeant le vinaigre, la moutarde et le sel fin. Montez la vinaigrette à l'huile d'olive avec une fourchette. Ajoutez les échalottes et la ciboulette en mélangeant, puis laissez reposer au réfrigirateur pendant 1 h.</p></li>
-              <li><p>Disposez les haricots verts puis les tomates confites dans des assiettes creuses puis assaisonez avec la vinaigrette.</p></li>
-            </ol>
-          </div>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h3>Recette</h3>
+              <ol>
+                <li>Épluchez l'échalote et ciselez la finement.</li>
+                <li>Ciselez la ciboulette très finement.</li>
+                <li>Coupez les tomates confites en petits dés.</li>
+                <li>Portez un grand volume d'eau à ébulition, assaisonez au gros et plongez les haricots dedans. Faites cuire pendant 8 min environ. Puis égouttez les haricots verts.</li>
+                <li>Préparez la vinaigrette en mélangeant le vinaigre, la moutarde et le sel fin. Montez la vinaigrette à l'huile d'olive avec une fourchette. Ajoutez les échalottes et la ciboulette en mélangeant, puis laissez reposer au réfrigirateur pendant 1 h.</li>
+                <li>Disposez les haricots verts puis les tomates confites dans des assiettes creuses puis assaisonez avec la vinaigrette.</li>
+              </ol>
+            </div>
+          </article>
         </section>
+
         <section id="cherry-waffles" class="recipe">
           <header>
-            <img src="./img/cherry-waffles.png" alt="Gaufres avec compotée de cerises">
-            <h1>Gaufres à la cerise</h1>
+            <h2>Gaufres à la cerise</h2>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus dignissimos quisquam, id culpa mollitia dolores tempora quia unde dicta quibusdam, numquam expedita quasi asperiores.</p>
-          <div>
-            <h3>Ingrédients</h3>
-            <ul>
-              <li>80 g de beurre</li>
-              <li>75 g de sucre</li>
-              <li>1 sachet de sucre vanillé</li>
-              <li>3 oeufs</li>
-              <li>200 g de farine</li>
-              <li>5,5 g de levure chimique</li>
-              <li>25 cl de lait</li>
-              <li>Compotée (ou confiture) de cerises</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Recette</h3>
-            <ol>
-              <li><p>Faites fondre le beurre, et mélangez-le au sucre et au sucre vanillé.</p></li>
-              <li><p>Battez 2 œufs entiers et un jaune d'œuf à la fourchette.</p></li>
-              <li><p>Réservez le troisième blanc à part, pour le battre en neige.</p></li>
-              <li><p>Ajoutez les œufs battus au mélange précédent.</p></li>
-              <li><p>Joignez la farine tamisée avec la levure en poudre.</p></li>
-              <li><p>Versez <b>un peu de lait</b>, en délayant <b>progressivement</b> pour ne pas faire de grumeaux (cuillère en bois).</p></li>
-              <li><p>Battez le blanc d'œuf en neige, et incorporez <b>délicatement</b> à la pâte.</p></li>
-              <li><p>Graissez le gaufrier, et faites les cuire pendant 2 à 3 min.</p></li>
-              <li><p>Laissez les refroidir 1 à 2 min puis ajoutez la compotée de cerises dessus.</p></li>
-            </ol>
-          </div>
+          <article>
+            <div class="teaser">
+              <img src="./img/cherry-waffles.png" alt="Gaufres avec compotée de cerises">
+            </div>
+            <div class="ingredients">
+              <h3>Ingrédients</h3>
+              <ul>
+                <li>80 g de beurre</li>
+                <li>75 g de sucre</li>
+                <li>1 sachet de sucre vanillé</li>
+                <li>3 oeufs</li>
+                <li>200 g de farine</li>
+                <li>5,5 g de levure chimique</li>
+                <li>25 cl de lait</li>
+                <li>Compotée (ou confiture) de cerises</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h3>Recette</h3>
+              <ol>
+                <li>Faites fondre le beurre, et mélangez-le au sucre et au sucre vanillé.</li>
+                <li>Battez 2 œufs entiers et un jaune d'œuf à la fourchette.</li>
+                <li>Réservez le troisième blanc à part, pour le battre en neige.</li>
+                <li>Ajoutez les œufs battus au mélange précédent.</li>
+                <li>Joignez la farine tamisée avec la levure en poudre.</li>
+                <li>Versez <b>un peu de lait</b>, en délayant <b>progressivement</b> pour ne pas faire de grumeaux (cuillère en bois).</li>
+                <li>Battez le blanc d'œuf en neige, et incorporez <b>délicatement</b> à la pâte.</li>
+                <li>Graissez le gaufrier, et faites les cuire pendant 2 à 3 min.</li>
+                <li>Laissez les refroidir 1 à 2 min puis ajoutez la compotée de cerises dessus.</li>
+              </ol>
+            </div>
+          </article>
         </section>
+
       </section>
     </main>
 <!--     <aside>

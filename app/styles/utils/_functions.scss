@@ -2,6 +2,6 @@
   @return url("#{$path-img}/#{$name-img}#{$suffix}#{$file}");
 }
 
-@function pxtoem($pxval, $base) {
-  @return ($pxval / $base) * 1em;
+@function pxtorem($pxval, $base: 16px) {
+  @return ($pxval / $base) * 1rem;
 }

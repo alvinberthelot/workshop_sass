@@ -1,1 +1,0 @@
-|?| Pour des fichiers "partiels", la convention veut qu'ils commencent par _ sans pour autant être déclarés lors de l'import

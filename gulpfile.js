@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var del = require('del');
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var sassdoc = require('sassdoc');
 var taskListing = require('gulp-task-listing');
 var browserSync = require('browser-sync');
@@ -55,7 +56,9 @@ gulp.task('clean', function (cb) {
 gulp.task('css', function () {
   // keep stream CSS after Sass pre-processing
   gulp.src(paths.styles.src)
-    .pipe(sass())
+    .pipe(sourcemaps.init())
+      .pipe(sass())
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(reload({stream: true}));
 });

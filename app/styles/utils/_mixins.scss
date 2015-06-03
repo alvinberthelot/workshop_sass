@@ -30,8 +30,8 @@
   width: $size;
 }
 
-@mixin hr($color) {
-  border-bottom: 4px double $color;
+@mixin demarcation($color: $color-first, $position: bottom) {
+  border-#{$position}: 4px double $color;
 }
 
 @mixin hr-top($color) {
