@@ -1,5 +1,5 @@
 {
-  "name": "workshop_sass",
+  "name": "sass-workshop",
   "version": "1.0.0",
   "description": "[Sass](http://sass-lang.com/) est devenu en peu de temps le **pré-processeur CSS** le plus populaire parmi les webdesigners et les développeurs front-end.",
   "main": "index.js",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/webyousoon/workshop_sass"
+    "url": "https://github.com/webyousoon/sass-workshop"
   },
-  "author": "",
+  "author": "Alvin Berthelot",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/webyousoon/workshop_sass/issues"
+    "url": "https://github.com/webyousoon/sass-workshop/issues"
   },
-  "homepage": "https://github.com/webyousoon/workshop_sass"
+  "homepage": "https://github.com/webyousoon/sass-workshop"
 }

@@ -122,5 +122,5 @@ gulp.task('sassdoc', function () {
 gulp.task('build', ['copy-fonts', 'css', 'html', 'images']);
 
 gulp.task('default', ['clean'], function () {
-  gulp.start('build');
+  gulp.start('serve');
 });
