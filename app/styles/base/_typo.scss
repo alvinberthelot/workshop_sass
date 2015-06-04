@@ -14,10 +14,6 @@ a {
   }
 }
 
-p {
-  padding: 24px;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-title;
 }
@@ -27,12 +23,12 @@ h1 {
   padding: 64px 0;
   text-align: center;
 
-  color: green;
+  color: $color-first;
   @include mq(medium) {
-    color: orange;
+    color: $color-first;
   }
   @include mq(large) {
-    color: red;
+    color: $color-first;
   }
 }
 
@@ -49,8 +45,14 @@ h3 {
 }
 
 footer {
-  background: $color-background-annex;
+  font-size: pxtorem(14px);
   padding: 40px 20px;
+  a {
+    text-decoration: underline;
+    &:hover {
+      color: $color-first;
+    }
+  }
 }
 
 %list {

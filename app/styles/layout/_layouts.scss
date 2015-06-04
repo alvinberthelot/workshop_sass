@@ -26,77 +26,66 @@ section, p, div {
   }
   header {
     @extend %spacing-recipe;
-    padding: 16px 0;
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
   article {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+
+    @include mq(medium) {
+      flex-flow: row;
+    }
 
     .teaser {
+
       @extend %spacing-recipe;
+      display: none;
       flex: 1 auto;
       order: 1;
+
+      @include mq(large) {
+        display: block;
+      }
     }
     .ingredients {
       @extend %spacing-recipe;
       background-color: white;
       border: 1px solid darken($color-background, 10);
-      flex: 1 $aside-width;
-      order: 3;
+      flex: 1 auto;
+      @include mq(medium) {
+        flex: 1 $aside-width;
+      }
+      order: 2;
       margin-right: $spacing-width-page + $spacing-width-recipe;
+      @include mq(medium) {
+        order: 3;
+      }
     }
     .instructions {
       @extend %spacing-recipe;
       flex-shrink: 50;
-      order: 2;
+      order: 3;
+      @include mq(medium) {
+        order: 2;
+      }
     }
+
+
   }
 }
 
-
-
-
-
-
-
-
-
-aside {
-  background: $color-second;
-}
 
 #container {
-  width: 100%;
+
   background: $color-background;
-}
+  width: 100%;
 
-@include mq(medium) {
-  #container {
+  @include mq(medium) {
+  }
+
+  @include mq(large) {
     margin: auto;
-    // margin: 40px auto 40px auto;
-    width: 960px;
-  }
-  aside {
-    height: 100%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    // width: 200px;
-  }
-}
-
-@include mq(large) {
-  #container {
-    width: 1024px;
-    // margin-right: 300px;
-  }
-  aside {
-    height: 100%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    width: 300px;
+    width: $screen-m;
   }
 }
