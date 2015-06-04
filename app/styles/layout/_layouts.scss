@@ -6,15 +6,9 @@
 }
 
 
-
-
 %page {
   margin: 0 $margin-width-page;
   padding: 24px 0;
-}
-
-section, p, div {
-  // @extend %page;
 }
 
 .recipe {
@@ -24,19 +18,21 @@ section, p, div {
     margin: $margin-height-recipe $margin-width-recipe;
     padding: $padding-height-recipe $padding-width-recipe;
   }
-  header {
+  > header {
     @extend %spacing-recipe;
     padding-bottom: 16px;
     padding-top: 16px;
   }
-  article {
+  > article {
     display: flex;
     flex-flow: column;
 
     @include mq(medium) {
       flex-flow: row;
     }
-
+    h3 {
+      border-bottom: 1px dashed $color-second;
+    }
     .teaser {
 
       @extend %spacing-recipe;
@@ -46,18 +42,22 @@ section, p, div {
 
       @include mq(large) {
         display: block;
+        @include demarcation($color-background-darken, right);
       }
     }
     .ingredients {
       @extend %spacing-recipe;
       background-color: white;
-      border: 1px solid darken($color-background, 10);
+      border: 1px solid $color-background-darken;
       flex: 1 auto;
+
       @include mq(medium) {
         flex: 1 $aside-width;
       }
       order: 2;
-      margin-right: $spacing-width-page + $spacing-width-recipe;
+      @include mq(large) {
+        margin-right: $spacing-width-page + $spacing-width-recipe;
+      }
       @include mq(medium) {
         order: 3;
       }
@@ -70,8 +70,6 @@ section, p, div {
         order: 2;
       }
     }
-
-
   }
 }
 

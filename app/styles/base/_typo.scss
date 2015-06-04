@@ -19,17 +19,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  color: $color-first;
   font-size: pxtorem(36px);
   padding: 64px 0;
   text-align: center;
-
-  color: $color-first;
-  @include mq(medium) {
-    color: $color-first;
-  }
-  @include mq(large) {
-    color: $color-first;
-  }
 }
 
 h2 {
@@ -38,7 +31,6 @@ h2 {
 }
 
 h3 {
-  border-bottom: 1px dashed $color-second;
   font-size: pxtorem(24px);
   padding: 8px 0;
   margin: 8px 0;
@@ -104,6 +96,12 @@ $rounded-icon-size: 40px;
 }
 
 #teaser {
+
+  display: none;
+  @include mq(large) {
+    display: block;
+  }
+
   position: relative;
   margin-top: 0;
   max-width: 100%;
@@ -111,34 +109,34 @@ $rounded-icon-size: 40px;
   height: 450px;
   width: 100%;
   @include bg-img('bg-teaser', '.png');
+}
 
-  #last-recipes {
-    background: $color-first;
-    position: absolute;
-    bottom: 0;
-    right: $spacing-width-page + $spacing-width-recipe;
-    top: 0;
-    width: $aside-width;
-    padding:8px;
-    li {
-      padding: 16px;
-      text-align: center;
-      
-      img {
-        // border-color: 20px solid pink;
-        display: block;
-        margin: 8px auto;
-        @include circle(50px);
-      }
-      a {
-        color: $color-second;
-        font-family: $font-item;
-        font-size: 20px;
-      }
+#last-recipes {
+  background: $color-first;
+  position: absolute;
+  bottom: 0;
+  right: $spacing-width-page + $spacing-width-recipe;
+  top: 0;
+  width: $aside-width;
+  padding:8px;
+  li {
+    padding: 16px;
+    text-align: center;
+    
+    img {
+      // border-color: 20px solid pink;
+      display: block;
+      margin: 8px auto;
+      @include circle(50px);
     }
-    li + li {
-      @include demarcation($color-background, top);
+    a {
+      color: $color-second;
+      font-family: $font-item;
+      font-size: 20px;
     }
+  }
+  li + li {
+    @include demarcation($color-background, top);
   }
 }
 

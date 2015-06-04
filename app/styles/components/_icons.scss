@@ -1,0 +1,25 @@
+@mixin add-unicode($unicode, $pseudo-element: before, $margin: 6px) {
+
+  &::#{$pseudo-element} {
+    content: $unicode;
+
+    @if $pseudo-element == before {
+      margin-right: $margin;
+    }
+    @if $pseudo-element == after {
+      margin-left: $margin;
+    }
+  }
+
+}
+
+@each $name, $unicode in $icons {
+
+  .icon-left-#{$name} {
+    @include add-unicode($unicode, $pseudo-element: before)
+  }
+
+  .icon-right-#{$name} {
+    @include add-unicode($unicode, $pseudo-element: after)
+  }
+}
