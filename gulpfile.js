@@ -1,5 +1,6 @@
 // dependances
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var del = require('del');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -57,7 +58,10 @@ gulp.task('css', function () {
   // keep stream CSS after Sass pre-processing
   gulp.src(paths.styles.src)
     .pipe(sourcemaps.init())
-      .pipe(sass())
+      //.pipe(sass())
+      .pipe(sass()).on('error', function logError(error) {
+        console.error(error);
+      })
     .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(reload({stream: true}));

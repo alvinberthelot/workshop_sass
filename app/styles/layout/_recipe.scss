@@ -1,0 +1,61 @@
+.recipe {
+  @extend %page;
+  @include demarcation();
+  %spacing-recipe {
+    margin: $margin-height-recipe $margin-width-recipe;
+    padding: $padding-height-recipe $padding-width-recipe;
+  }
+  > header {
+    @extend %spacing-recipe;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  > article {
+    display: flex;
+    flex-flow: column;
+
+    @include mq(medium) {
+      flex-flow: row;
+    }
+    h3 {
+      border-bottom: 1px dashed $color-second;
+    }
+    .teaser {
+
+      @extend %spacing-recipe;
+      display: none;
+      flex: 1 auto;
+      order: 1;
+
+      @include mq(large) {
+        display: block;
+        @include demarcation($color-background-darken, right);
+      }
+    }
+    .ingredients {
+      @extend %spacing-recipe;
+      background-color: white;
+      border: 1px solid $color-background-darken;
+      flex: 1 auto;
+
+      @include mq(medium) {
+        flex: 1 $aside-width;
+      }
+      order: 2;
+      @include mq(large) {
+        margin-right: $spacing-width-page + $spacing-width-recipe;
+      }
+      @include mq(medium) {
+        order: 3;
+      }
+    }
+    .instructions {
+      @extend %spacing-recipe;
+      flex-shrink: 50;
+      order: 3;
+      @include mq(medium) {
+        order: 2;
+      }
+    }
+  }
+}

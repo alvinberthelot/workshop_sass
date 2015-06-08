@@ -87,3 +87,79 @@
     width: $screen-m;
   }
 }
+
+
+ul.contact li {
+  margin: 10px;
+}
+
+$rounded-icon-size: 40px;
+
+.rounded-icon {
+
+  background: $color-first;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  line-height: $rounded-icon-size;
+  vertical-align: middle;
+
+  @include circle($rounded-icon-size);
+  i {
+    line-height: $rounded-icon-size;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+#teaser {
+
+  display: none;
+  @include mq(large) {
+    display: block;
+  }
+
+  position: relative;
+  margin-top: 0;
+  max-width: 100%;
+
+  height: 450px;
+  width: 100%;
+  @include bg-img('bg-teaser', '.png');
+}
+
+#last-recipes {
+  background: $color-first;
+  position: absolute;
+  bottom: 0;
+  right: $spacing-width-page + $spacing-width-recipe;
+  top: 0;
+  width: $aside-width;
+  padding:8px;
+  li {
+    padding: 16px;
+    text-align: center;
+    
+    img {
+      // border-color: 20px solid pink;
+      display: block;
+      margin: 8px auto;
+      @include circle(50px);
+    }
+    a {
+      color: $color-second;
+      font-family: $font-item;
+      font-size: 20px;
+    }
+  }
+  li + li {
+    @include demarcation($color-background, top);
+  }
+}
+
+.teaser {
+  img {
+    @include circle(150px);
+  }
+}
